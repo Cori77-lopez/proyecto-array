@@ -1,0 +1,117 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #fff;
+  /* Fondo animado con degradado de tonos azules */
+  background: linear-gradient(-45deg, #0d1b2a, #1b263b, #08305f, #085170);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease-in-out infinite;
+}
+
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  25% {background-position: 50% 100%;}
+  50% {background-position: 100% 50%;}
+  75% {background-position: 50% 0%;}
+  100% {background-position: 0% 50%;}
+}
+
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 40px 0 rgba(31, 38, 135, 0.18);
+  padding: 32px 24px 28px 24px;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: #0d1b2a;
+  text-shadow: 0 2px 8px #80d8ff44;
+  background: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+input, button {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1.5px solid #80d8ff;
+  font-size: 1em;
+  margin-bottom: 6px;
+}
+
+input {
+  background: #e3f6fd;
+  color: #0d1b2a;
+  font-weight: 600;
+  transition: box-shadow 0.2s;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #27469088;
+}
+
+button {
+  background: linear-gradient(90deg, #274690 60%, #80d8ff 100%);
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px #27469033;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #80d8ff 60%, #274690 100%);
+  transform: scale(1.04);
+}
+
+.usuarios ul {
+  list-style: none;
+  padding: 0;
+}
+
+.usuarios li {
+  background: #dbeafe;
+  color: #0d1b2a;
+  margin-bottom: 8px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 500;
+  box-shadow: 0 1px 6px #80d8ff33;
+}
+
+.dato-extra {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.dato-extra label, .dato-extra p {
+  color: #274690;
+  font-weight: 600;
+}
+
+.dato-extra input {
+  background: #e3f6fd;
+  color: #274690;
+  border: 1.5px solid #80d8ff;
+}
+
+.dato-extra button {
+  background: linear-gradient(90deg, #80d8ff 60%, #274690 100%);
+  color: #fff;
+  font-weight: 700;
+}
+
+.dato-extra button:hover {
+  background: linear-gradient(90deg, #274690 60%, #80d8ff 100%);
+}
