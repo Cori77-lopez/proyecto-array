@@ -1,4 +1,4 @@
-# 🎬 Proyecto: Gestión de Usuarios + Películas Históricas
+# 🎬 Proyecto: Gestión de Usuarios Cursos + Películas Históricas
 
 ---
 
@@ -83,7 +83,7 @@ Aplicación web que simula una base de datos de usuarios y permite buscar pelíc
 
 ## 🔗 Enlaces
 
-- **🌐 App web:** [Pon aquí el link de GitHub Pages]
-- **📂 Repositorio:** [Pon aquí el link del repositorio]
+- **🌐 App web:** https://cori77-lopez.github.io/proyecto-array/
+- **📂 Repositorio:** https://github.com/Cori77-lopez/proyecto-array.git
 
 ---
