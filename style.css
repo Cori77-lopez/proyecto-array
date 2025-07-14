@@ -3,7 +3,6 @@ body {
   margin: 0;
   font-family: 'Montserrat', Arial, sans-serif;
   color: #fff;
-  /* Fondo animado con degradado de tonos azules */
   background: linear-gradient(-45deg, #0d1b2a, #1b263b, #08305f, #085170);
   background-size: 400% 400%;
   animation: gradientBG 12s ease-in-out infinite;
@@ -114,4 +113,15 @@ button:hover {
 
 .dato-extra button:hover {
   background: linear-gradient(90deg, #274690 60%, #80d8ff 100%);
+}
+
+.api-section {
+  margin-top: 32px;
+  text-align: center;
+}
+
+#movieResultado {
+  margin-top: 16px;
+  color: #0d1b2a;
+  font-weight: 600;
 }

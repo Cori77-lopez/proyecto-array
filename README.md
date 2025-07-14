@@ -1,4 +1,4 @@
-# 🚀 Proyecto: Gestión de Usuarios con Array y LocalStorage
+# 🎬 Proyecto: Gestión de Usuarios + Películas Históricas
 
 ---
 
@@ -10,33 +10,44 @@
 
 ## 📝 Descripción
 
-Esta aplicación web simula una base de datos de usuarios utilizando un array en JavaScript. Permite agregar nuevos usuarios mediante un formulario, guardar información personalizada en el navegador y mostrar todos los datos en pantalla de forma dinámica.
+Aplicación web que simula una base de datos de usuarios y permite buscar películas históricas usando la API pública de OMDb. Los datos se guardan en el navegador con localStorage, asegurando persistencia entre sesiones.
 
 ---
 
-## ⚙️ ¿Cómo funciona?
+## 🚦 ¿Cómo funciona?
 
-### 1️⃣ Simulación de base de datos
+### 1️⃣ Base de datos simulada (array de usuarios)
 
-- Se utiliza un **array de objetos** en JavaScript llamado `usuarios` para almacenar la información de cada usuario (id, nombre, edad y email).
-- Este array actúa como una base de datos temporal en memoria.
+- El array `usuarios` contiene objetos con id, nombre, edad y email.
+- Al iniciar, se carga desde localStorage si existe, o se usa el array inicial.
 
 ### 2️⃣ Mostrar usuarios en pantalla
 
-- Al cargar la página, se recorre el array de usuarios y se muestra cada usuario en una lista (`<ul>`) usando JavaScript y el método `createElement`.
-- Cada vez que se agrega un usuario nuevo, la lista se actualiza automáticamente.
+- Se recorre el array y se muestra cada usuario en una lista.
+- Si no hay usuarios, se muestra un mensaje.
 
 ### 3️⃣ Agregar nuevos usuarios
 
-- Hay un **formulario** con campos para nombre, edad y email.
-- Al enviar el formulario, se crea un nuevo objeto usuario con los datos ingresados y se agrega al array.
-- La lista de usuarios se vuelve a mostrar con el nuevo usuario incluido.
+- Formulario con validación:
+  - Nombre no vacío.
+  - Email con "@".
+  - Edad mayor a 0.
+- Si es válido, se agrega al array, se guarda en localStorage y se actualiza la lista.
 
-### 4️⃣ Guardar información personalizada en el navegador
+### 4️⃣ Guardar y mostrar materia favorita
 
-- Al cargar la página, si el usuario no tiene un nombre guardado, se le pide mediante un `prompt` y se guarda en el **localStorage**.
-- El nombre se muestra en pantalla como un saludo personalizado.
-- Además, el usuario puede guardar su **materia favorita**. Este dato también se almacena en localStorage y se muestra en pantalla.
+- Input para materia favorita.
+- Se guarda en localStorage y se muestra en pantalla.
+
+### 5️⃣ Saludo personalizado
+
+- Al cargar, se pide el nombre si no está guardado y se muestra un saludo personalizado.
+
+### 6️⃣ Buscar películas históricas (API OMDb)
+
+- Input para buscar películas por título.
+- Se consulta la API pública de OMDb y se muestran los primeros 5 resultados con título, año, póster y link a IMDb.
+- Si no se encuentra, se muestra un mensaje de error.
 
 ---
 
@@ -44,33 +55,35 @@ Esta aplicación web simula una base de datos de usuarios utilizando un array en
 
 - **HTML:** estructura de la página.
 - **CSS:** estilos visuales.
-- **JavaScript:** lógica de la aplicación, manejo de arrays, eventos y localStorage.
+- **JavaScript:** lógica de la app, manejo de arrays, eventos, localStorage y consumo de API.
 
 ---
 
-## 💡 ¿Qué conceptos de programación se aplican?
+## 💡 ¿Qué conceptos se aplican?
 
-- **Arrays y objetos:** para simular la base de datos.
-- **Manipulación del DOM:** para mostrar y actualizar la información en pantalla.
-- **Eventos:** para manejar el envío del formulario y los botones.
-- **localStorage:** para guardar y recuperar datos personalizados del usuario.
-- **Funciones:** para organizar el código y reutilizar lógica.
+- Arrays y objetos.
+- Manipulación del DOM.
+- Eventos y validaciones.
+- localStorage y persistencia.
+- Consumo de API externa con fetch.
+- Funciones para modularizar el código.
 
 ---
 
 ## 🧪 ¿Cómo probar la aplicación?
 
-1. Abrir el archivo `index.html` en el navegador o ingresar al link de GitHub Pages.
+1. Abrir `index.html` en el navegador o ingresar al link de GitHub Pages.
 2. Al cargar, aparecerá un prompt pidiendo tu nombre (si es la primera vez).
-3. Se mostrará un saludo personalizado y la lista de usuarios inicial.
-4. Puedes agregar nuevos usuarios con el formulario.
-5. Puedes guardar tu materia favorita, que se mostrará en pantalla y se recordará al recargar la página.
+3. Se muestra el saludo y la lista de usuarios.
+4. Puedes agregar usuarios con el formulario.
+5. Puedes guardar tu materia favorita.
+6. Puedes buscar películas históricas por título y ver resultados visuales.
 
 ---
 
 ## 🔗 Enlaces
 
-- **🌐 App web:** (https://cori77-lopez.github.io/proyecto-array/)
-- **📂 Repositorio:** (https://github.com/Cori77-lopez/proyecto-array.git)
+- **🌐 App web:** [Pon aquí el link de GitHub Pages]
+- **📂 Repositorio:** [Pon aquí el link del repositorio]
 
 ---
